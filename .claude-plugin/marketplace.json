@@ -5,7 +5,7 @@
     {
       "name": "opensense",
       "description": "Design judgment for AI coding agents: interfaces that fit the product and its people, with less clutter.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source": "./",
       "author": { "name": "Thith-thith" }
     }

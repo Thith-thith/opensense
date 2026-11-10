@@ -2,7 +2,7 @@
 
 **Design with intention.** OpenSense is an open-source skill that gives AI coding agents a designer's judgment when they build or change user interfaces.
 
-> **Status: v0.1.0 preview.** It was tested in one with-and-without round on 8 tasks; see [How it was tested](#how-it-was-tested). Feedback and test cases are welcome.
+> **Status: v0.2.0 preview.** v0.1.0 was tested in one with-and-without round on 8 tasks; see [How it was tested](#how-it-was-tested). v0.2.0 adds rules for shorter labels, icons and Khmer type, so far checked with one Khmer rerun. Feedback and test cases are welcome.
 
 ## Why
 

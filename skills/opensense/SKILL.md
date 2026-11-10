@@ -3,7 +3,7 @@ name: opensense
 description: Design judgment for building and improving user interfaces on any platform (web, iOS, Android, desktop). Use it before writing or editing any UI code or UI copy, even a one-line tweak such as a button color, a label, spacing, or adding an empty state, and whenever you create or review pages, screens, components, forms, dashboards, landing pages, onboarding or error states, or adapt UI for other languages, scripts, right-to-left layouts, or people new to technology. Guides hierarchy, typography, color, spacing, wording, interaction, responsive layout, localization, and accessibility so the result fits the product and its users, cuts visual and textual clutter, respects the existing design system and platform conventions, and is checked before it is called done. Not for backend-only work.
 license: MIT
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # OpenSense
