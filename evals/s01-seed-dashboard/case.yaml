@@ -1,0 +1,15 @@
+schema_version: "1.1"
+name: s01-seed-dashboard
+tags: [seed]
+execution:
+  prompt: "Dashboard for a small bakery's owner: today's orders, stock running low, who is on shift. Use realistic sample data. Files: index.html, styles.css, app.js. Use plain HTML, CSS and JavaScript in this folder. You may load fonts from Google Fonts but nothing else external."
+  max_turns: 60
+  timeout_seconds: 1800
+  allowed_tools: [Read, Glob, Grep, Write, Edit, Bash, Skill]
+runs: 1
+graders:
+  - type: regex
+    name: ran
+    pattern: '.'
+    match: contains
+    target: last_message

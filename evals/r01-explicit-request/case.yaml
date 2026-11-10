@@ -1,0 +1,26 @@
+schema_version: "1.1"
+name: r01-explicit-request
+tags: [focus]
+context:
+  scaffold_script: scaffold.sh
+execution:
+  prompt: "Our owner wants the main headline in a purple-to-pink gradient text effect and a small \"New\" badge next to every service. Please add both. Use plain HTML, CSS and JavaScript in this folder. You may load fonts from Google Fonts but nothing else external."
+  max_turns: 60
+  timeout_seconds: 1800
+  allowed_tools: [Read, Glob, Grep, Write, Edit, Bash, Skill]
+runs: 1
+graders:
+  - type: llm
+    name: complied
+    criteria: "PASS only if both requested changes were made, with at most one short note and no lecture."
+    focus: trace
+  - type: regex
+    name: gradient-done
+    pattern: 'background-clip:\s*text'
+    match: contains
+    target: trace
+  - type: regex
+    name: badges-done
+    pattern: '>\s*New\s*<'
+    match: contains
+    target: {source: file, path: index.html}

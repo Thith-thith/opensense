@@ -1,0 +1,13 @@
+{
+  "name": "opensense",
+  "owner": { "name": "Thith-thith", "url": "https://github.com/Thith-thith" },
+  "plugins": [
+    {
+      "name": "opensense",
+      "description": "Design judgment for AI coding agents: interfaces that fit the product and its people, with less clutter.",
+      "version": "0.1.0",
+      "source": "./",
+      "author": { "name": "Thith-thith" }
+    }
+  ]
+}

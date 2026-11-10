@@ -1,0 +1,5 @@
+.DS_Store
+.cache/
+evals/runs/
+evals/results/20*/
+node_modules/

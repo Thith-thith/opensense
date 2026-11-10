@@ -1,0 +1,14 @@
+schema_version: "1.1"
+name: tr06-onboarding-review
+tags: [trigger]
+execution:
+  prompt: "Review our onboarding screens and tell me what to fix."
+  max_turns: 3
+  allowed_tools: [Read, Glob, Grep, Skill]
+runs: 3
+graders:
+  - type: tool_used
+    name: fired
+    tool: Skill
+    input_match: '"skill"\s*:\s*"(?:[\w-]+:)?opensense"'
+    min: 1

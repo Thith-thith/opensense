@@ -1,0 +1,10 @@
+{
+  "name": "opensense",
+  "version": "0.1.0",
+  "description": "Design judgment for AI coding agents: interfaces that fit the product and its people, with less clutter.",
+  "author": { "name": "Thith-thith", "url": "https://github.com/Thith-thith" },
+  "homepage": "https://github.com/Thith-thith/opensense",
+  "repository": "https://github.com/Thith-thith/opensense",
+  "license": "MIT",
+  "keywords": ["design", "ui", "ux", "accessibility", "typography", "localization", "rtl"]
+}

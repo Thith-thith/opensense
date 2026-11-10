@@ -1,0 +1,14 @@
+schema_version: "1.1"
+name: tr02-settings-cluttered
+tags: [trigger]
+execution:
+  prompt: "The settings screen feels cluttered. Can you clean it up?"
+  max_turns: 3
+  allowed_tools: [Read, Glob, Grep, Skill]
+runs: 3
+graders:
+  - type: tool_used
+    name: fired
+    tool: Skill
+    input_match: '"skill"\s*:\s*"(?:[\w-]+:)?opensense"'
+    min: 1
