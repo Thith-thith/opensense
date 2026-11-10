@@ -74,9 +74,9 @@ One round compared the same agent and model (Claude Code, Sonnet 5.5) with and w
 
 ![Settings › Billing, without and with OpenSense](evals/results/img/t01-settings-billing.jpg)
 
-![Tasks page on a phone, without and with OpenSense](evals/results/img/t04-tasks-phone.jpg)
+![Tasks page on a phone, without and with OpenSense](evals/results/img/t04-tasks-phone.png)
 
-![Khmer landing page, without and with OpenSense](evals/results/img/t08-khmer-landing.jpg)
+![Khmer landing page, without and with OpenSense](evals/results/img/t08-khmer-landing.png)
 
 **Why this is a preview:**
 - each side ran once;
