@@ -18,12 +18,23 @@ After: start-aligned layout using logical properties, labels that wrap, and font
 
 **Default:** Set `lang="km"` on Khmer content, and let the platform break lines. Keep any zero-width spaces already in the text. **Why:** Khmer is written without spaces between words. The browser and OS use the language, and those invisible marks, to find where words end. **Deviate when:** never use `word-break: break-all` on Khmer, because it splits a word inside a stacked cluster.
 
-**Default:** Give Khmer more room than Latin text: body text at about 17–18 px, and line height of about 1.8–2.0. Never clip the line box with fixed heights or hidden overflow. **Why:** Khmer stacks subscript consonants below the base letter, and places vowels above, below and before it. Tight line boxes cut those marks off, and small sizes blur them. **Deviate when:** a large single-line heading can be a little tighter. Check it with the deepest stacks.
+**Default:** Give Khmer more room than Latin text: body text at about 17–18 px with line height of about 1.8–2.0, no Khmer text below about 14 px even in badges and captions, and line height of at least about 1.5 on a single line. Never clip the line box: `truncate` or hidden overflow with `line-height: 1` cuts the marks off. **Why:** Khmer stacks subscript consonants below the base letter, and places vowels above, below and before it. Tight line boxes cut those marks off, and small sizes blur them on low-resolution screens. **Deviate when:** a large single-line heading can be a little tighter. Check it with the deepest stacks, such as ស្ត្រី.
 
 **Default:** Choose a typeface with real Khmer coverage, such as Noto Sans Khmer or Kantumruy Pro. Keep decorative display styles like Moul for short titles only. **Why:** a Latin-only font falls back to a mismatched system face, and display styles are hard to read at small sizes. **Deviate when:** the brand specifies a Khmer typeface. Use it.
 
 Before: Khmer body text in a Latin web font, at 14 px and line height 1.2, inside a fixed-height button.
 After: a Khmer typeface at 17 px and line height 1.9, inside a button that grows with its text.
+
+Before: a sidebar item "ប្រវត្តិរូប" set with `truncate` and `line-height: 1`, its subscripts cut off.
+After: the same item at line height 1.5, whole.
+
+**Default:** When shortening Khmer, let a label just name the thing. Drop "please" (សូម) and "your" (របស់អ្នក) from labels, buttons and toasts, and drop instruction verbs such as "enter" (បញ្ចូល) from field labels. Buttons keep their action verb. Keep សូម in sentences that ask the person to do something, such as instructions and errors. **Why:** a label only has to name the thing, while a request without សូម can read as curt. **Deviate when:** the product's existing Khmer copy sets its own tone. Follow it.
+
+Before: the field label "សូមបញ្ចូលលេខទូរស័ព្ទរបស់អ្នក" ("Please enter your phone number").
+After: the label "លេខទូរស័ព្ទ" ("Phone number"). If the number is wrong, the error keeps សូម: "លេខទូរស័ព្ទនេះខ្វះមួយខ្ទង់។ សូមពិនិត្យម្ដងទៀត។" ("This phone number is missing a digit. Please check it again.")
+
+Before: the toast "ការផ្លាស់ប្ដូររបស់អ្នកត្រូវបានរក្សាទុកដោយជោគជ័យ!" ("Your changes have been saved successfully!").
+After: "បានរក្សាទុក" ("Saved").
 
 ## Right-to-left: Arabic
 

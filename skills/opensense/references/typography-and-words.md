@@ -71,6 +71,36 @@ After: "Step 1 of 5", or one progress bar, not both.
 
 What to keep even when it feels long: prices and fees, legal and consent text, error messages, warnings about destructive actions, and status the user must act on.
 
+## Fewer words, then icons
+
+**Default:** After cutting, shorten what stays. Take labels, headings, buttons, navigation items, badges, status, toasts, tooltips and empty-state messages to the shortest phrase that keeps the meaning. For an action, that's the verb and the object. **Why:** people scan interface text rather than read it, and every extra word delays the one that matters. **Deviate when:** the extra words carry what people need to act. "Enter the 6-digit code we sent to 012 345 678" beats "Enter OTP".
+
+**Default:** Judge length by meaning, never by a word count. **Why:** Khmer, Thai, Chinese and Japanese don't put spaces between words, and a translation can be much longer or shorter than English, so a fixed word limit means nothing across languages. **Deviate when:** never.
+
+**Default:** Let a well-known icon replace a label or a verb, and keep the word that carries the rest: a phone icon before a shown phone number, a download icon before "PDF", a comment icon before "12". Input fields keep their visible text label. Take icons from the project's set or the platform's symbols. **Why:** a known icon is recognized before a word is read. **Deviate when:** the project has neither. Stay with words; don't add an icon library unasked, and never use emoji.
+
+**Default:** Show an icon alone only when all of these hold:
+- the platform's own apps show that icon alone for that action, and on web both iOS's and Android's do, such as search, close, back, add or more;
+- people use it often, or it repeats on every row;
+- it has an accessible name and, where there's a pointer, a tooltip on hover and on keyboard focus;
+- it isn't the only way to a rare or important action, and a destructive one ends in Undo or a confirmation.
+
+**Why:** few icons are understood without a word, touch screens have no hover to explain them, and people using voice control have to guess the name to say. **Deviate when:** the audience is new to technology. Then every icon keeps its word.
+
+**Default:** Set an icon as part of its text: an icon box a little larger than the font size, such as 16 px beside 14 px text, a stroke that matches the font's weight, the same gap everywhere, and centered on the main body of the letters, which in Khmer means the base consonants, not the marks above and below. **Why:** an icon sized or weighted apart from its word reads as a separate thing. **Deviate when:** the icon is the whole control. Then use the platform's icon size, and keep the full touch target.
+
+Before: an empty orders page reading "You don't have any orders yet. When customers place orders, they will appear here so you can manage them."
+After: "No orders yet", and a "Share your shop" button.
+
+Before: a toast reading "Your changes have been saved successfully!"
+After: "Changes saved".
+
+Before: toolbar buttons reading "Search orders", "Filter the list" and "Export to CSV".
+After: a search icon alone, then "Filter" and "Export CSV" as words. Search is known everywhere, filter icons differ between products, and export is rare.
+
+Before: a shortened "Delete" button whose accessible name is "Remove item".
+After: the accessible name "Delete invoice INV-0042", which keeps the visible word.
+
 ## Naming and tone
 
 **Default:** One name for one thing across the product. Keep the same verb from button to confirmation to history. **Why:** a new word reads as a new thing. **Deviate when:** never inside one product. Rename everywhere at once, or not at all.

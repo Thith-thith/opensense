@@ -91,6 +91,16 @@ Cut by default:
 - an intro paragraph explaining what the screen obviously is;
 - a card around content that isn't a separate, repeated or movable object.
 
+Then shorten what stays. Take each label, heading, button, navigation item, badge, status, toast, tooltip and empty-state message only as far down this ladder as its meaning survives:
+
+1. **A phrase.** Only the words that carry the meaning, often 1–3 in English: "Renews 3 March", not "Your plan will renew automatically on 3 March". Buttons keep their verb ("Save changes", not "Changes").
+2. **Icon and word.** A well-known icon replaces a label or a verb: a phone icon before a shown phone number, a download icon before "PDF". Input fields keep their visible text label. Use the project's icons or the platform's symbols, never emoji. With neither, stay with words.
+3. **Icon alone,** only if all hold: the platform's own apps show that icon alone for that action, and on web both iOS's and Android's do (search, close, back, add, more); it's frequent or on every row; it has an accessible name and, with a pointer, a tooltip; it isn't the only way to a rare or important action; and a destructive one ends in Undo or a confirmation.
+
+Short still reads as plain words: "3 orders to ship", not "Order fulfillment status" or a lone "3" over a tiny label. The accessible name contains the visible words. People new to technology stop at icon and word.
+
+In Khmer and other scripts with marks above and below the letters, short labels need room too: line height of at least about 1.5 wherever a box hides overflow at the text's own height, as `truncate` does, or the marks get cut, and no Khmer text below about 14 px. Before shortening Khmer copy, read references/culture-and-language.md.
+
 Never cut, however tidy it would look: errors, prices and fees, consent text, warnings about destructive actions, state the user needs to act on, and accessible names for icon-only controls. When you remove a visible label, keep the accessible name.
 
 Deviate when the audience needs more guidance than usual, for example people new to technology or a rare, high-stakes flow. Keep helper text that prevents mistakes, and make it specific.
@@ -163,7 +173,8 @@ Details: references/typography-and-words.md.
 1. **Look at the result if you can.** Open it in a browser, take screenshots or run a simulator:
    - at the sizes and platforms that matter (for web, at least a phone width and a desktop width);
    - in light and dark if the app supports both;
-   - right-to-left if it supports that.
+   - right-to-left if it supports that;
+   - with real text in every script it ships, such as Khmer, not placeholder English.
 2. **Run the checklist** in references/review.md against what you see, not what you meant to build. Fix what it finds and look again.
 3. **If you can't look, say so.** Don't describe how it "looks".
 4. **At minimum, confirm:**
@@ -199,5 +210,5 @@ Read only what the task needs:
 - Read references/typography-and-words.md when choosing type, setting hierarchy, or writing or cutting UI copy.
 - Read references/visual-and-interaction.md when deciding layout, color, components, motion, or the visual identity of a new product.
 - Read references/platforms-and-accessibility.md when targeting phones, tablets, desktop apps or native iOS and Android, and before calling any UI accessible.
-- Read references/culture-and-language.md when the product uses more than one language, a non-Latin script or right-to-left text, or serves people new to technology.
+- Read references/culture-and-language.md when the product uses more than one language, a non-Latin script such as Khmer or Arabic, or right-to-left text, or serves people new to technology.
 - Read references/review.md when reviewing or critiquing UI, and before calling your own work done.

@@ -61,6 +61,8 @@ Check each group against what you see. Skip what doesn't apply.
 **Information Economy**
 - Does every text, label, badge, icon, card and divider tell the user something nothing else does?
 - Has every repeated title, label or indicator been cut?
+- Is what stays at its shortest clear phrase, with icons only where they replace words or speed up scanning?
+- Does every icon shown alone meet every condition for showing an icon alone?
 - Are errors, prices, fees, consent, warnings and needed status still present?
 
 **Cross-Platform Experience**

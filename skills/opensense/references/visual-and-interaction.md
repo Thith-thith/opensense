@@ -45,7 +45,7 @@ After: the same component using the surface and foreground tokens, so it changes
 
 ## Imagery and icons
 
-**Default:** Use the project's icon set, one style and one weight, with icons only where they speed up recognition. **Why:** mixed icon styles look assembled, and decorative icons add noise. **Deviate when:** the audience reads with difficulty or uses another language. Then pair icons with labels everywhere.
+**Default:** Use the project's icon set, or the platform's symbols, in one style and one weight. Use an icon only where it replaces words or speeds up scanning a repeated set, like navigation or file types, and keep its word unless the platform's own apps show that icon alone. **Why:** mixed icon styles look assembled, decorative icons add noise, and few icons are understood without a word. **Deviate when:** the audience is new to technology or reads with difficulty. Then pair every icon with its word.
 
 **Default:** Use real or realistic images of the actual subject. Never invent customers, logos or testimonials. **Why:** fake proof destroys trust. **Deviate when:** no assets exist. Then use honest placeholders, and say so.
 

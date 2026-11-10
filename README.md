@@ -19,7 +19,7 @@ OpenSense doesn't give your agent a style. It changes how the agent decides:
 
 - **Scales the process to the task.** A one-line tweak stays a one-line tweak. A new product gets a short design direction before any code.
 - **Follows your project before its own taste.** The order is: your instructions, then your design system, then platform conventions, and only then OpenSense's defaults.
-- **Cuts clutter, keeps what matters.** It removes descriptions that repeat titles, badges that never change and labels that repeat the question. It never cuts errors, prices and fees, consent text, warnings or accessible names.
+- **Cuts clutter, keeps what matters.** It removes descriptions that repeat titles, badges that never change and labels that repeat the question. What stays gets shorter: a phrase instead of a sentence, and an icon instead of words only where people already know the icon. It never cuts errors, prices and fees, consent text, warnings or accessible names.
 - **Works across platforms and languages.**
   - Platforms: web, iOS, Android and desktop.
   - Scripts: right-to-left and non-Latin scripts, with Arabic and Khmer examples.

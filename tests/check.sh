@@ -81,7 +81,8 @@ for s in ["The user's explicit instructions for the current task.",
     if p < 0: miss.append("authority/order: " + s)
     else: pos = p
 for s in ["What does this tell the user that nothing else does?",
-          "Would I write this same direction for any product in this category?"]:
+          "Would I write this same direction for any product in this category?",
+          "only as far down this ladder as its meaning survives"]:
     if s not in t: miss.append(s)
 for w in ["errors","prices","fees","consent","destructive","state","accessible names"]:
     if not re.search(r"(?<![\w-])" + re.escape(w) + r"(?![\w-])", t): miss.append("never-cut word: " + w)
