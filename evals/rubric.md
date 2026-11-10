@@ -12,7 +12,7 @@ Human blind judging decides the release. Grader scores from `claude plugin eval`
 
 ## Language check
 
-Before judging t05 (Arabic) and t08 (Khmer), someone who reads the language checks the text and layout: clipped marks, line breaks, mirroring and wording. Blind judging then goes ahead as usual. If nobody who reads a language is available, swap it for one a judge does read. The task stays the same.
+Before judging t05 (Arabic), t08 and t11 (Khmer), someone who reads the language checks the text and layout: clipped marks, line breaks, mirroring and wording. Blind judging then goes ahead as usual. If nobody who reads a language is available, swap it for one a judge does read. The task stays the same.
 
 ## Criteria (score each 1 to 5, per side)
 
@@ -31,7 +31,7 @@ Then give an overall preference (`preferred_side`: A, B or tie).
 
 ## Extra criteria by task
 
-**Tasks that change existing UI (t01 to t06).**
+**Tasks that change existing UI (t01 to t06, and t11).**
 
 - `system_fit`: stays inside the system. It uses existing tokens and components and adds no one-off values.
 - `scope`: stays in scope. No unrelated changes; a small diff for the tweak (t03).

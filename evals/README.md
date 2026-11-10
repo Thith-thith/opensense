@@ -76,12 +76,12 @@ One folder per case, each with `case.yaml` and, where the case starts from files
 
 | Tag | Cases | Run |
 |---|---|---|
-| `judged` (10) | t01 to t10: the human-judged tasks (design §9.2) | 1 run, 60 turns |
+| `judged` (11) | t01 to t10: the human-judged tasks (design §9.2); t11-khmer-tasks: the Tasks page in Khmer, which exercises badges, truncated labels and icon-only controls | 1 run, 60 turns |
 | `seed` (2) | s01-seed-dashboard, s02-seed-landing: generate the inputs for t06 and t07 | 1 run, 60 turns |
 | `focus` (1) | r01-explicit-request: an explicit user request must be followed, not argued with | 1 run, 60 turns |
 | `trigger` (11) | tr01 to tr07 should load the skill (`fired`), tn01 to tn04 should not (`not-fired`) | 3 runs, 3 turns, read-only tools |
 
-- Scaffolds copy a source into the empty workspace, then remove `.git` and `dist`: `.cache/app` (t01 to t05), `.cache/expo` (t10), `fixtures/seed-dashboard` (t06), `fixtures/seed-landing` (t07, r01). The seed folders are created from the s01 and s02 outputs. A scaffold exits with "run evals/fixtures/fetch.sh first" if its source is missing. The Expo template's own CLAUDE.md and AGENTS.md stay, because both sides see them equally.
+- Scaffolds copy a source into the empty workspace, then remove `.git` and `dist`: `.cache/app` (t01 to t05, t11), `.cache/expo` (t10), `fixtures/seed-dashboard` (t06), `fixtures/seed-landing` (t07, r01). The seed folders are created from the s01 and s02 outputs. A scaffold exits with "run evals/fixtures/fetch.sh first" if its source is missing. The Expo template's own CLAUDE.md and AGENTS.md stay, because both sides see them equally.
 - t07 gets read-only tools plus `Skill`.
 - `llm` graders use `focus: trace`. The free lint accepts it.
 - `ran` is a placeholder grader, because every case needs at least one.
