@@ -22,6 +22,7 @@ After: "I opened the settings page at 390 px and 1440 px in light and dark, and 
 - in light and dark when the app supports both;
 - right-to-left when the app supports it;
 - with long and empty content;
+- as a tired first-time user: a small phone, large text, and a slow connection if you can simulate one;
 - in loading and error states.
 
 Tab through with the keyboard. **Why:** most problems hide at the edges: a narrow screen, a long name, an empty list. **Deviate when:** a tweak touched one element. Then look at that element in its states, plus anything near it.
@@ -46,34 +47,50 @@ Check each group against what you see. Skip what doesn't apply.
 - Is nothing invented: no fake features, metrics, testimonials or research?
 
 **UX Architecture**
-- Can people tell where they are, what they can do and what happens next?
+- At a glance, can a first-time user tell where they are, what the screen is for and what to do next?
 - Are the flows short, the labels visible, the input types right, and errors kept next to their fields?
+- Are the total, the conditions and the consequences in view next to every button that commits, with other detail one tap away?
+- Are defaults visible and easy to change, with nothing pre-selected for consent or paid extras?
+- Does every disabled control say why in visible text, and is a second press of a submit ignored?
 - Are the empty, loading, error and offline states designed?
+- Is "no results" after filtering told apart from empty, and are active filters visible, removable and kept on Back?
+- Do tables have real header cells, task-ordered columns, units in the header and a visible sort, and does "select all" say what it covers?
+- Does a multi-step form name the step, keep answers on Back and end with a review?
 - Are destructive actions named, with their consequence stated?
 
 **Visual Excellence**
 - Is there one focal point, with hierarchy by size, weight and space?
-- Is spacing on a scale, with grouping shown by proximity?
+- Is spacing on a scale, with grouping shown by proximity and more space above each heading than below?
 - Does color have roles, with one accent?
 - Are shadows and borders only where they mean layering?
+- Does anything sit in an absolute position that should flow, and does each kind of action sit where sibling screens put it?
+- Do images keep their space while loading, share one shape in a set, never stretch, and have text alternatives where they carry meaning?
 - Does the identity come from the subject, not from decoration?
+- For a new product or brand page, is it still recognizably this product with the logo and name hidden?
+- Does each section's layout follow its content, rather than repeating one template?
+- Does every animation explain a change, ease in or out, stay short, and leave input working?
 
 **Information Economy**
 - Does every text, label, badge, icon, card and divider tell the user something nothing else does?
 - Has every repeated title, label or indicator been cut?
 - Is what stays at its shortest clear phrase, with icons only where they replace words or speed up scanning?
 - Does every icon shown alone meet every condition for showing an icon alone?
+- Does any text explain how to work a control? Fix the control.
+- Where the fact is known, is it shown instead of a claim ("Arrives Thu 19 Nov", not "Fast delivery")?
 - Are errors, prices, fees, consent, warnings and needed status still present?
 
 **Cross-Platform Experience**
 - Is the phone layout designed on purpose?
 - Are platform navigation and controls respected?
-- Are targets at least 24×24 CSS px on web, 44 pt on iOS and 48 dp on Android?
+- Are targets at least 24×24 CSS px on web, 44 pt on iOS and 48 dp on Android, with space between separate controls such as toolbar icons?
 - Does it work at large text sizes?
+- Is anything covered by a sticky bar or the on-screen keyboard: content, the field being typed in, or the main action?
 
 **Design QA & Refinement**
-- Is contrast enough in every mode?
+- Is contrast measured in every mode, including muted text, placeholders, input borders, focus rings and error text?
 - Is focus visible, with every control named?
+- Are important status changes announced to screen readers?
+- Does anything jump while content loads?
 - Is reduced motion respected?
 - Did you look at the real result, or say that you couldn't?
 
@@ -87,7 +104,7 @@ After: "Settings › Billing: all three cards repeat their title in a descriptio
 - **where:** the screen and element, or the file and line;
 - **fix:** the concrete change.
 
-End every report with `Checked:` and `Not checked:` lines. **Why:** a ranked, specific list can be acted on, while a vague verdict can't, and the last two lines keep the report honest. **Deviate when:** the user asked for a single verdict. Give it, then the top three findings.
+End every report with `Checked:` and `Not checked:` lines. A review can't prove a screen is usable, so name the flows worth testing with real people under `Not checked:`. **Why:** a ranked, specific list can be acted on, while a vague verdict can't, and the last two lines keep the report honest. **Deviate when:** the user asked for a single verdict. Give it, then the top three findings.
 
 Before: "Overall, the page could be improved in terms of visual hierarchy and spacing."
 After:
@@ -96,7 +113,7 @@ After:
 3. Header: the small all-caps label above the title repeats the page name. Remove it.
 
 Checked: 390 px and 1440 px in light mode, keyboard focus order.
-Not checked: dark mode, screen readers.
+Not checked: dark mode, screen readers, and checkout with real customers.
 
 ## Critique without changes
 

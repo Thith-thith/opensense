@@ -46,16 +46,34 @@ After: "$12,346, up 2.1% from last week"
 
 **Default:** Write in the user's words and name things by what they do for the user. **Why:** "Notifications" is understood, "Webhook config" isn't. **Deviate when:** the users are specialists whose own words are the technical terms.
 
-**Default:** A button says what will happen, and the result echoes it. **Why:** "Submit" and "OK" make people guess. **Deviate when:** a platform's standard dialog expects its own standard labels.
+**Default:** A button says what will happen, and the result echoes it. A button that charges money shows the amount: "Pay $12". **Why:** "Submit" and "OK" make people guess. **Deviate when:** a platform's standard dialog expects its own standard labels.
 
 **Default:** An error says what happened and how to fix it, in plain words, without blame or apology. **Why:** people need the next step, not a mood. **Deviate when:** the cause is unknown. Then say so, and offer the safest next step.
 
 Before: "Error 422: Unprocessable entity."
 After: "This phone number is missing a digit. Check it and try again."
 
+**Default:** Where you have the fact, show it instead of a claim about it: the date, the price, the count. **Why:** a fact can be checked and acted on, while a claim asks to be trusted. **Deviate when:** you don't have the fact. Never invent a number to fill the gap.
+
+Before: "Fast delivery" and "Affordable plans".
+After: "Arrives Thu 19 Nov" and "$12 a month".
+
 ## Information economy in depth
 
 **Default:** Before keeping any piece of text, ask what it tells the user that nothing else on the screen does. **Why:** generated screens repeat titles in descriptions, labels in placeholders and headings in intros, and repetition hides what matters. **Deviate when:** the text prevents a likely, costly mistake. Keep it, and make it specific.
+
+**Default:** Cut these by default:
+- a description under a title that restates the title ("Payment method" over "The card we charge each cycle");
+- a field label that repeats the question above it (make the question the label);
+- a small label above the heading, in any script, often all-caps or joined with a middle dot (·);
+- a badge that can only ever show one value (a badge earns its place when the state differs between items or over time);
+- a second indicator of the same thing, such as a progress bar plus "Step 1 of 5" plus dots;
+- an intro paragraph explaining what the screen obviously is;
+- a card around content that isn't a separate, repeated or movable object;
+- text that explains how to work a control, such as "Swipe left to delete" or "Tap the pencil to edit" (fix the control instead: a visible "Delete", a pencil button that says "Edit");
+- a claim where you have the fact to show instead ("Arrives Thu 19 Nov", not "Fast delivery").
+
+**Why:** each one repeats, decorates or explains what the screen should already show. **Deviate when:** the audience needs more guidance than usual, for example people new to technology or a rare, high-stakes flow. Keep helper text that prevents mistakes, and make it specific.
 
 Before: a card titled "Current plan", described as "The plan your account is on."
 After: the heading "Plan", then "Pro, renews 3 March".
@@ -94,6 +112,9 @@ After: "No orders yet", and a "Share your shop" button.
 
 Before: a toast reading "Your changes have been saved successfully!"
 After: "Changes saved".
+
+Before: a lone "3" over a tiny "Order fulfillment status" label.
+After: "3 orders to ship", which is short and still reads as plain words.
 
 Before: toolbar buttons reading "Search orders", "Filter the list" and "Export to CSV".
 After: a search icon alone, then "Filter" and "Export CSV" as words. Search is known everywhere, filter icons differ between products, and export is rare.
